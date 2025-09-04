@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-const BACKEND = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
+const BACKEND = awaitfetch("https://ledger-knight-bend.onrender.com");
 
 const DetailModal = ({ tx, onClose }) => {
   if (!tx) return null;
