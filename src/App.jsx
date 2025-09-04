@@ -6,7 +6,7 @@ import AuditorDashboard from './components/AuditorDashboard.jsx';
 import AssociateDashboard from './components/AssociateDashboard.jsx';
 import MessageBanner from './components/MessageBanner.jsx';
 
-const BACKEND = await fetch("https://ledger-knight-bend.onrender.com");
+const BACKEND = import.meta.env.VITE_BACKEND_URL || process.env.VITE_BACKEND_URL || 'http://localhost:4000';
 
 const App = () => {
   const [view, setView] = useState(() => localStorage.getItem('view') || 'landing');

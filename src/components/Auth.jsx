@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const BACKEND = await fetch("https://ledger-knight-bend.onrender.com");
+const BACKEND = import.meta.env.VITE_BACKEND_URL || process.env.VITE_BACKEND_URL || 'http://localhost:4000';
 
 const Auth = ({ onLogin, setMessage }) => {
   const [activeTab, setActiveTab] = useState('register');
