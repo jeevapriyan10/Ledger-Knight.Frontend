@@ -6,7 +6,7 @@ import AuditorDashboard from './components/AuditorDashboard.jsx';
 import AssociateDashboard from './components/AssociateDashboard.jsx';
 import MessageBanner from './components/MessageBanner.jsx';
 
-const BACKEND = awaitfetch("https://ledger-knight-bend.onrender.com");
+const BACKEND = await fetch("https://ledger-knight-bend.onrender.com");
 
 const App = () => {
   const [view, setView] = useState(() => localStorage.getItem('view') || 'landing');

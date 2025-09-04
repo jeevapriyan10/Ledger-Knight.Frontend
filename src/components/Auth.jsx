@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const BACKEND = awaitfetch("https://ledger-knight-bend.onrender.com");
+const BACKEND = await fetch("https://ledger-knight-bend.onrender.com");
 
 const Auth = ({ onLogin, setMessage }) => {
   const [activeTab, setActiveTab] = useState('register');

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-const BACKEND = awaitfetch("https://ledger-knight-bend.onrender.com");
+const BACKEND = await fetch("https://ledger-knight-bend.onrender.com");
 
 const DetailModal = ({ tx, onClose }) => {
   if (!tx) return null;
